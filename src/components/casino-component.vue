@@ -60,7 +60,7 @@ export default {
         }
       })
     }
-  }
+  },
   mounted () {
     console.log('dispatching getContractInstance')
     this.$store.dispath('getContractInstance')
