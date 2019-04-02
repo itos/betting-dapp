@@ -27,7 +27,7 @@ let getWeb3 = new Promise(function (resolve, reject) {
   .then(result => {
     return new Promise(function (resolve, reject) {
       // Retrieve network ID
-      result.web3().version.getNetwork((err, networkID)) => {
+      result.web3().version.getNetwork((err, networkId) => {
         if (err) {
           // If we can't find a networkId keep result the same and reject the promise
           reject(new Error('Unable to retrieve network ID'))
