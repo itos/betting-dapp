@@ -1,15 +1,13 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <p>Hello</p>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'hello-metamask'
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
