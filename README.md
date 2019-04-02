@@ -1,4 +1,4 @@
-# betting-dapp
+#Betting Dapp
 
 > Betting app where players bet a number from 1 to 10, if they are correct they get their payout.
 
