@@ -1,5 +1,5 @@
 <template>
-  <div class="casino">
+  <div class="casino container">
     <h1>Welcome to the Casino</h1>
     <h4>Please pick a number between 1 and 10</h4>
     Amount to bet: <input v-model="amount" placeholder="0 ETH">
@@ -42,7 +42,7 @@ export default {
       this.$store.state.contractInstance().bet(event.target.innerHTML, {
         gas: 300000,
         value: this.$store.state.web3.web3Instance().toWei(this.amount, 'ether'),
-        from: this.$stre.state.web3.coinbase
+        from: this.$store.state.web3.coinbase
       }, (err, result) => {
         if(err) {
           console.log(err)
@@ -63,7 +63,7 @@ export default {
   },
   mounted () {
     console.log('dispatching getContractInstance')
-    this.$store.dispath('getContractInstance')
+    this.$store.dispatch('getContractInstance')
   }
 }
 </script>

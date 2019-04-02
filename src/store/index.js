@@ -22,16 +22,16 @@ export const store = new Vuex.Store({
       web3Copy.web3Instance = result.web3
       state.web3 = web3Copy
       pollWeb3()
+    },
+    pollWeb3Instance (state, payload) {
+      console.log('pollWeb3Instance mutation being executed', payload)
+      state.web3.coinbase = payload.coinbase
+      state.web3.balance = parseInt(payload.balance, 10)
+    },
+    registerContractInstance (state, payload) {
+      console.log('Casino contract instance: ', payload)
+      state.contractInstance = () => payload
     }
-  },
-  pollWeb3Instance (state, payload) {
-    console.log('pollWeb3Instance mutation being executed', payload)
-    state.web3.coinbase = payload.coinbase
-    state.web3.balance = parseInt(payload.balance, 10)
-  },
-  registerContractInstance (state, payload) {
-    console.log('Casino contract instance: ', payload)
-    state.contractInstance = () => payload
   },
   actions: {
     registerWeb3 ({commit}) {
