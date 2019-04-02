@@ -12,3 +12,31 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+
+/docs/
+
+# Logs
+logs
+*.log
+
+# Directories used by tools like mocha & istanbul
+coverage
+shippable
+
+# Dependency directory
+node_modules
+
+# Generated files
+config/development/contracts.json
+config/development/*.sol.js
+config/test/contracts.json
+build
+# dist
+>$ cat .gitignore
+.gitignore
+contracts/.placeholder
+test/.placeholder
+
+# Keys
+deploy_mnemonic.key
+password
