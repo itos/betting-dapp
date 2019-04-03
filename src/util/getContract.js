@@ -6,6 +6,8 @@ let getContract = new Promise(function (resolve, reject) {
   let casinoContract = web3.eth.contract(ABI)
   let casinoContractInstance = casinoContract.at(address)
   // casinoContractInstance = () => casinoContractInstance
+  console.log(casinoContract)
+  console.log(casinoContractInstance)
   resolve(casinoContractInstance)
 })
 
