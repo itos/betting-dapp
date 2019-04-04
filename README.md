@@ -1,6 +1,6 @@
 #Betting Dapp
 
-> Betting app where players bet a number from 1 to 10, if they are correct they get their payout.
+> Betting Dapp where players bet a number from 1 to 10, if they are correct they get their payout. Powered by blockchain smart contracts.
 
 ## Build Setup
 
